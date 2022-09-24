@@ -1,9 +1,6 @@
 <template>
   <div class="h-full">
     <Converter/>
-    <div class="testSize">
-<!--    <CopiableTextArea></CopiableTextArea>-->
-    </div>
   </div>
 </template>
 
