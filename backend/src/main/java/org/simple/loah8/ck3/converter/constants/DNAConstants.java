@@ -12,7 +12,7 @@ public class DNAConstants {
 
 	public static String CK_VERSION_FILE = "E:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\launcher\\launcher-settings.json";
 	private static String CK_GENE_FILE_PATH = "E:\\SteamLibrary\\steamapps\\common\\Crusader Kings III\\game\\common\\genes\\";
-	private static String FE_RESOURCE_PATH = "E:\\WebProjects\\simple-vue-web-converter\\ck3-converter\\src\\files\\";
+	private static String FE_RESOURCE_PATH = "../frontend/src/files/";
 
 
 	public enum JsonFileInfo {

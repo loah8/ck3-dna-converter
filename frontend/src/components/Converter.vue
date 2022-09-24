@@ -102,7 +102,7 @@ export default {
 
     // R-DNA Digit -> R-DNA 로 변경
     // Before : objArr :  [{gene_chin_forward : [129,2,3,4]}, {skin_color : [1,2,3,4]}]
-    // After:  objArr :  [{gene_chin_forward : ["chin_forward_pos",2,"chin_forward_pos",4]}, {skin_color : [1,2,3,4]}]
+    // After :  objArr :  [{gene_chin_forward : ["chin_forward_pos",2,"chin_forward_pos",4]}, {skin_color : [1,2,3,4]}]
     // convertRDnaDigitObjArrToRDnaNameObjArr
     convertRDnaDigitObjArrToRDnaNameObjArr() {
       let objArr = this.$data.RDnaDigitObjArr;
@@ -110,6 +110,10 @@ export default {
       for (let i = 0; i < objArr.length; i++) {
         let fromObj = objArr[i];
         let key = Object.keys(objArr[i])[0];
+
+        if (key === "undefined") {
+          continue;
+        }
 
         // hair_color ~ 는 고정
         if (i < START_CUSTOM_GENE_INDEX) {

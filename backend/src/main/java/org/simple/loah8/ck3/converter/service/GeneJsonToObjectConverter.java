@@ -142,8 +142,8 @@ public class GeneJsonToObjectConverter {
 		customFileWriter.jsonFileWrite(CHILD_INDEX_MAP.getResourcePath(), childIndexMap);
 		customFileWriter.jsonFileWrite(CHILD_NAME_MAP.getResourcePath(), childNameMap);
 
-		Files.copy(Path.of(INDEX_MAP.getResourcePath()), Path.of(INDEX_MAP.getFEPath()), StandardCopyOption.REPLACE_EXISTING);
-		Files.copy(Path.of(CHILD_INDEX_MAP.getResourcePath()), Path.of(INFO.getFEPath()), StandardCopyOption.REPLACE_EXISTING);
+		Files.copy(Path.of(CHILD_INDEX_MAP.getResourcePath()), Path.of(CHILD_INDEX_MAP.getFEPath()), StandardCopyOption.REPLACE_EXISTING);
+		Files.copy(Path.of(CHILD_NAME_MAP.getResourcePath()), Path.of(CHILD_NAME_MAP.getFEPath()), StandardCopyOption.REPLACE_EXISTING);
 	}
 
 }
