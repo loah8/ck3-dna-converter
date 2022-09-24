@@ -95,3 +95,4 @@ modules.xml
 /frontend/node_modules/
 /backend/logs/
 /backend/target/
+/frontend/dist/
