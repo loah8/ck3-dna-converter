@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service sitemap build --no-clean",
+    "build": "vue-cli-service sitemap && vue-cli-service build --no-clean",
     "lint": "vue-cli-service lint",
     "sitemap": "vue-cli-service sitemap"
   },
